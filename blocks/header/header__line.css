@@ -1,0 +1,13 @@
+.header__line {
+    display: none;
+    height: 36px;
+    width: 2px;
+    background-color: #eaeaea;
+}
+
+
+@media (min-width: 768px) {
+    .header__line {
+        display: block;
+    }
+}

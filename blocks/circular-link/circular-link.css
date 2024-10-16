@@ -1,0 +1,28 @@
+.circular-link {
+    border-radius: 50%;
+    height: 40px;
+    outline-offset: -5px;
+    transition: .1s ease-in-out outline-offset;
+}
+
+.circular-link:focus-visible {
+    outline: 2px solid #41F6D7;
+    outline-offset: 0; 
+}
+
+.circular-link rect {
+    transition: 0.1s ease-in-out fill;
+}
+
+.circular-link:hover rect {
+    fill: #ff9ab8;
+}
+
+.circular-link:focus-visible rect {
+    fill: #ff3e79;
+}
+
+
+.circular-link:active rect {
+    fill: #9c2549;
+}

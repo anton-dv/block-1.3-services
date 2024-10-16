@@ -1,0 +1,15 @@
+.hero__title {
+    padding-bottom: 89px;
+}
+
+@media (min-width: 768px) {
+    .hero__title {
+        padding-bottom: 104px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .hero__title {
+        padding-bottom: 96px;
+    }
+}

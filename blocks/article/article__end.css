@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    .article__end {
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .article__end {
+        padding: 2px 27px 0 0;
+    }
+}

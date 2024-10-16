@@ -1,0 +1,23 @@
+@import url('menu-nav__list.css');
+
+.menu-nav {
+    display: flex;
+    overflow-x: auto;
+    padding-inline: 16px 20px;
+}
+
+.menu-nav::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (min-width: 768px) {
+    .menu-nav {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .menu-nav {
+        padding-left: 33px;
+    }
+}

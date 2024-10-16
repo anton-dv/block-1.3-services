@@ -1,0 +1,12 @@
+@import url('fonts.css');
+
+@import url('../blocks/nav-btn/nav-btn.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/services-nav/services-nav.css');
+@import url('../blocks/hero/hero.css');
+@import url('../blocks/main-title/main-title.css');
+@import url('../blocks/menu-nav/menu-nav.css');
+@import url('../blocks/article/article.css');
+@import url('../blocks/logo/logo.css');
+@import url('../blocks/read-more-link/read-more-link.css');
+@import url('../blocks/circular-link/circular-link.css');

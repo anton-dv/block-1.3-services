@@ -1,0 +1,17 @@
+.header__start {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .header__start {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__start {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.article__start {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 100%;
+    gap: 19px;
+    padding: 0 16px 17px 16px;
+}
+
+@media (min-width: 768px) {
+    .article__start {
+        padding: 1px 46px 24px 24px;
+        gap: 7px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .article__start {
+        padding: 12px 36px 24px 34px;
+        gap: 13px;
+    }
+}

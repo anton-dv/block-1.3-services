@@ -1,0 +1,11 @@
+.services-nav__list {
+    align-items: center;
+    gap: 16px;
+    font-size: 0;
+}
+
+@media (min-width: 1120px) {
+    .services-nav__list {
+        gap: 32px;
+    }
+}

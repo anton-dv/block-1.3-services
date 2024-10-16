@@ -1,0 +1,17 @@
+@import url('article__start.css');
+@import url('article__end.css');
+@import url('article__content.css');
+@import url('article__text.css');
+@import url('article__image.css');
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row;
+    }
+}

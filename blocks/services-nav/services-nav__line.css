@@ -1,0 +1,12 @@
+.services-nav__line {
+    height: 32px;
+    width: 2px;
+    margin-inline: 4px;
+    background-color: #eaeaea;
+}
+
+@media (min-width: 1120px) {
+    .services-nav__line {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.hero__menu {
+    position: absolute;
+    max-width: 100%;
+    top: 88px;
+}
+
+@media (min-width: 768px) {
+    .hero__menu {
+       top: 96px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .hero__menu {
+       top: 91px;
+    }
+}
