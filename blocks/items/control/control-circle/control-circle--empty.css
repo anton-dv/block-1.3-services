@@ -1,0 +1,8 @@
+.control-circle--empty {
+    border: 2px solid var(--control-circle-color-primary);
+    background-color: transparent;
+}
+
+.control-circle--empty path {
+    fill: var(--control-circle-color-primary);
+}

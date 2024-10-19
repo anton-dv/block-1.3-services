@@ -1,0 +1,49 @@
+:root {
+    --control-circle-color-primary: var(--infra-red);
+    --control-circle-color-secondary: white;
+    --control-circle-color-light: var(--infra-red-lighter);
+}
+
+.control-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+
+    outline: 2px solid var(--control-circle-color-primary);
+    outline-offset: -2px;
+
+    background-color: var(--control-circle-color-primary);
+    transition: var(--duration-fast) ease-in-out outline-offset;
+}
+
+
+.control-circle svg {
+    z-index: 10;
+    transition: var(--duration-fast) ease-in-out transform;
+}
+
+.control-circle:focus-visible {
+    outline-offset: 2px;
+}
+
+.control-circle:focus-visible svg,
+.control-circle:hover svg {
+    transform: scale(120%);
+}
+
+.control-circle:active svg {
+    transition: var(--duration-very-fast) ease-in-out transform;
+    transform: scale(90%);
+}
+
+/* 
+<a class="control control-circle">
+    <svg>..icon..</svg>
+</a> 
+*/

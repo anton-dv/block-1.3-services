@@ -7,23 +7,23 @@
     <title>Услуги и сервисы</title>
 
     <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
+
+    <!-- header begin -->
+
     <header class="header">
         <div class="header__start">
-            <button class="btn circular-link" aria-label="открыть меню">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="20" fill="#FF3E79" />
+            <button class="control control-circle control-circle--fill" type="button" aria-label="открыть меню">
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11 13C11 12.4477 11.4477 12 12 12H28C28.5523 12 29 12.4477 29 13C29 13.5523 28.5523 14 28 14H12C11.4477 14 11 13.5523 11 13ZM11 20C11 19.4477 11.4477 19 12 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H12C11.4477 21 11 20.5523 11 20ZM12 26C11.4477 26 11 26.4477 11 27C11 27.5523 11.4477 28 12 28H24C24.5523 28 25 27.5523 25 27C25 26.4477 24.5523 26 24 26H12Z"
+                        d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM0 8C0 7.44772 0.447715 7 1 7H9C9.55228 7 10 7.44772 10 8C10 8.55229 9.55229 9 9 9H1C0.447715 9 0 8.55229 0 8ZM1 14C0.447715 14 0 14.4477 0 15C0 15.5523 0.447716 16 1 16H13C13.5523 16 14 15.5523 14 15C14 14.4477 13.5523 14 13 14H1Z"
                         fill="white" />
                 </svg>
             </button>
-            <div class="header__line"></div>
+            <div class="line header__line"></div>
             <a href="#" class="header__logo logo" aria-label="логотип компании">
                 <svg width="98" height="52" viewBox="0 0 98 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -53,105 +53,96 @@
                 </svg>
             </a>
         </div>
-        <nav class="header__nav services-nav">
-            <ul class="list services-nav__list">
-                <li class="services-nav__item">
-                    <span class="services-nav__about" id="call-link">Позвонить</span>
-                    <a class="link circular-link" aria-describedby="call-link" aria-label="значек телефона" href="#">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF3E79" />
+        <div class="header__end">
+            <ul class="list list-services header__list">
+                <li>
+                    <span id="call-link">Позвонить</span>
+                    <a class="control control-circle control-circle--fill" aria-describedby="call-link"
+                        aria-label="значек телефона" href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12.7602 23.25L15.3002 22.96C15.9102 22.89 16.5102 23.1 16.9402 23.53L18.7802 25.37C21.6102 23.93 23.9302 21.62 25.3702 18.78L23.5202 16.93C23.0902 16.5 22.8802 15.9 22.9502 15.29L23.2402 12.77C23.3602 11.76 24.2102 11 25.2302 11H26.9602C28.0902 11 29.0302 11.94 28.9602 13.07C28.4302 21.61 21.6002 28.43 13.0702 28.96C11.9402 29.03 11.0002 28.09 11.0002 26.96V25.23C10.9902 24.22 11.7502 23.37 12.7602 23.25Z"
+                                d="M1.76019 12.25L4.30019 11.96C4.91019 11.89 5.51019 12.1 5.94019 12.53L7.78019 14.37C10.6102 12.93 12.9302 10.62 14.3702 7.78L12.5202 5.93C12.0902 5.5 11.8802 4.9 11.9502 4.29L12.2402 1.77C12.3602 0.76 13.2102 0 14.2302 0H15.9602C17.0902 0 18.0302 0.94 17.9602 2.07C17.4302 10.61 10.6002 17.43 2.07019 17.96C0.940193 18.03 0.00019455 17.09 0.00019455 15.96V14.23C-0.00980568 13.22 0.750193 12.37 1.76019 12.25Z"
                                 fill="white" />
                         </svg>
                     </a>
                 </li>
-                <li class="services-nav__item">
-                    <span class="services-nav__about" id="chat-link">Открыть чат</span>
-                    <a class="link circular-link" href="#" aria-describedby="chat-link" aria-label="значек чата">
-                        <svg class="btn__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF3E79" />
+                <li>
+                    <span id="chat-link">Открыть чат</span>
+                    <a class="control control-circle control-circle--fill" href="#" aria-describedby="chat-link"
+                        aria-label="значек чата">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z"
-                                fill="white" />
-                            <mask id="mask0_0_1880" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="11"
-                                width="20" height="20">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z"
-                                    fill="white" />
-                            </mask>
-                            <g mask="url(#mask0_0_1880)">
-                            </g>
-                        </svg>
-                    </a>
-                </li>
-                <li class="services-nav__item">
-                    <span class="services-nav__about" id="profile-link">Открыть профиль</span>
-                    <a class="link circular-link" href="#" aria-describedby="profile-link" aria-label="значек человека">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF3E79" />
-                            <path
-                                d="M20.5 19C22.9853 19 25 16.9853 25 14.5C25 12.0147 22.9853 10 20.5 10C18.0147 10 16 12.0147 16 14.5C16 16.9853 18.0147 19 20.5 19Z"
-                                fill="white" />
-                            <path
-                                d="M10.0166 26.6118C9.88693 27.3412 10.5352 28 11.339 28H28.6604C29.4902 28 30.1125 27.3412 29.9829 26.6118C29.2309 22.4 25.0561 20 19.9997 20C14.9433 20 10.7686 22.4 10.0166 26.6118Z"
+                                d="M18 0H2C0.9 0 0.01 0.9 0.01 2L0 20L4 15H18C19.1 15 20 14.1 20 13V2C20 0.9 19.1 0 18 0ZM11 11H5C4.45 11 4 10.55 4 10C4 9.45 4.45 9 5 9H11C11.55 9 12 9.45 12 10C12 10.55 11.55 11 11 11ZM15 6H5C4.45 6 4 5.55 4 5C4 4.45 4.45 4 5 4H15C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6Z"
                                 fill="white" />
                         </svg>
                     </a>
                 </li>
-                <li class="services-nav__item">
-                    <div class="services-nav__line"></div>
-                </li>
-                <li class="services-nav__item">
-                    <span class="services-nav__about" id="repair-link">Статус ремонта</span>
-                    <a class="link circular-link" href="#" aria-describedby="repair-link" aria-label="значек на котором изображены отвертка и гаечный ключ">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF3E79" />
+                <li>
+                    <span id="profile-link">Открыть профиль</span>
+                    <a class="control control-circle control-circle--fill" href="#" aria-describedby="profile-link"
+                        aria-label="значек человека">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M18.2581 23.4583L18.6668 23.0494L16.95 21.3322L16.5412 21.7411L16.3368 21.5367C16.0098 21.1687 15.6828 20.9643 15.3558 21.0052C15.1105 21.0052 14.9061 21.1687 14.7426 21.414C14.4973 21.8229 14.62 22.2726 14.6608 22.5588C14.6608 22.6406 14.7017 22.6815 14.7017 22.7632C14.7017 22.8859 14.7017 23.0494 14.4156 23.0903C14.0068 23.213 13.4754 23.3356 12.944 23.6218C12.2082 24.0307 11.7176 24.3987 11.4315 24.7666C9.91902 26.7291 10.0008 28.4055 10.0008 28.4872C10.0008 28.6099 10.0417 28.6917 10.1234 28.7325L11.2271 29.8773C11.3089 29.9591 11.3906 30 11.4724 30C11.4724 30 11.5133 30 11.595 30C12.0038 30 13.4754 29.9182 15.1922 28.569C15.5601 28.2828 15.928 27.7922 16.3368 27.0562C16.623 26.5656 16.7865 26.0341 16.8682 25.5844C16.95 25.2982 17.0726 25.2982 17.1953 25.2982C17.2361 25.2982 17.3179 25.339 17.3996 25.339C17.5631 25.3799 17.7267 25.4208 17.931 25.4208C18.1354 25.4208 18.3398 25.3799 18.5442 25.2573C18.7895 25.0937 18.953 24.8893 18.9939 24.644C19.0347 24.3169 18.8712 23.9898 18.5033 23.7036L18.2581 23.4583Z"
+                                d="M10.5 9C12.9853 9 15 6.98528 15 4.5C15 2.01472 12.9853 0 10.5 0C8.01472 0 6 2.01472 6 4.5C6 6.98528 8.01472 9 10.5 9Z"
                                 fill="white" />
                             <path
-                                d="M26.884 14.8784L28.0188 14.326C28.0609 14.2835 28.1449 14.241 28.1869 14.1986L29.9101 11.8616C30.0362 11.6916 30.0362 11.4367 29.8681 11.3092L28.6913 10.1195C28.5652 9.99199 28.313 9.9495 28.1449 10.077L25.8333 11.8191C25.7913 11.8616 25.7493 11.9041 25.7072 11.989L25.1609 13.1363L21 17.2154L22.7652 19L26.884 14.8784Z"
-                                fill="white" />
-                            <path
-                                d="M27.8527 23.0448C26.8636 22.0036 25.4393 21.6288 24.0941 22.0036L17.6453 15.1733C17.7244 14.7985 17.764 14.4653 17.764 14.0905C17.764 13.0493 17.3683 12.0081 16.6166 11.2167C15.588 10.0923 14.045 9.71742 12.6207 10.2172C12.5416 10.2588 12.4229 10.3838 12.3833 10.5504C12.3833 10.6753 12.4229 10.8003 12.502 10.9252L14.4406 12.966C14.8758 13.4241 14.8758 14.2154 14.4406 14.6735C14.0054 15.1317 13.2537 15.1317 12.8185 14.6735L10.8799 12.6328C10.7612 12.5495 10.6425 12.5078 10.4843 12.5495C10.3656 12.5495 10.2469 12.6744 10.2073 12.7994C9.73256 14.2571 10.0886 15.8813 11.1173 16.9642C11.8294 17.7555 12.8581 18.172 13.8867 18.172C14.2032 18.172 14.5593 18.1303 14.8758 18.047L21.3642 24.8773C21.0082 26.2933 21.4038 27.7927 22.3533 28.8339C23.105 29.6252 24.0546 30 25.0832 30C25.5184 30 25.914 29.9167 26.3492 29.7918C26.4679 29.7501 26.5866 29.6252 26.6262 29.5002C26.6658 29.3753 26.6262 29.2087 26.5075 29.1254L24.5689 27.0846C24.3711 26.8764 24.2128 26.5432 24.2128 26.21C24.2128 25.8768 24.3315 25.5853 24.5689 25.3354C24.8063 25.0855 25.0832 24.9606 25.3997 24.9606C25.7162 24.9606 25.9932 25.0855 26.2306 25.3354L28.1692 27.3762C28.2879 27.4595 28.4065 27.5011 28.5252 27.5011C28.6439 27.4595 28.7626 27.3762 28.8022 27.2512C28.9209 26.8348 29 26.3766 29 25.9185C29 24.8356 28.6044 23.7944 27.8527 23.0448Z"
-                                fill="white" />
-                        </svg>
-                    </a>
-                </li>
-                <li class="services-nav__item">
-                    <span class="services-nav__about" id="application-link">Оставить заявку</span>
-                    <a class="link circular-link" href="#" aria-describedby="application-link" aria-label="значек заявки">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF3E79" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 11C12 10.4477 12.4477 10 13 10H27C27.5523 10 28 10.4477 28 11V28.5C27.1716 28.5 26.5001 29.1715 26.5 29.9999H25.5C25.4999 29.1715 24.8284 28.5 24 28.5C23.1716 28.5 22.5001 29.1715 22.5 29.9999H21.5C21.4999 29.1715 20.8284 28.5 20 28.5C19.1716 28.5 18.5001 29.1715 18.5 29.9999H17.5C17.4999 29.1715 16.8284 28.5 16 28.5C15.1716 28.5 14.5001 29.1715 14.5 29.9999H13.5C13.4999 29.1715 12.8284 28.5 12 28.5V11ZM21.4164 21.7884C20.5536 22.3444 19.4704 22.5936 18.3296 22.3827C16.5275 22.0472 15.0896 20.5327 14.8595 18.7114C14.4952 15.8261 16.9493 13.4201 19.8538 13.8802C21.656 14.1678 23.1035 15.644 23.4007 17.4365C23.5828 18.5485 23.324 19.5741 22.7872 20.4273L24.8961 22.5265C25.2699 22.9004 25.2699 23.5138 24.8961 23.8877C24.5126 24.2711 23.8991 24.2711 23.5253 23.8973L21.4164 21.7884ZM16.7059 18.0588C16.7059 16.76 17.76 15.7059 19.0588 15.7059C20.3576 15.7059 21.4118 16.76 21.4118 18.0588C21.4118 19.3576 20.3576 20.4118 19.0588 20.4118C17.76 20.4118 16.7059 19.3576 16.7059 18.0588Z"
+                                d="M0.0165859 16.6118C-0.113065 17.3412 0.535191 18 1.33903 18H18.6604C19.4902 18 20.1125 17.3412 19.9829 16.6118C19.2309 12.4 15.0561 10 9.99973 10C4.94333 10 0.768563 12.4 0.0165859 16.6118Z"
                                 fill="white" />
                         </svg>
                     </a>
                 </li>
             </ul>
-        </nav>
+            <div class="line header__line"></div>
+            <ul class="list list-services list-services--describle header__list">
+                <li>
+                    <span class="list-services__desc" id="repair-link">Статус ремонта</span>
+                    <a class="control control-circle control-circle--fill" href="#" aria-describedby="repair-link"
+                        aria-label="значек на котором изображены отвертка и гаечный ключ">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.25807 13.4583L8.66685 13.0494L6.94998 11.3322L6.54121 11.7411L6.33682 11.5367C6.0098 11.1687 5.68278 10.9643 5.35575 11.0052C5.11049 11.0052 4.9061 11.1687 4.74259 11.414C4.49732 11.8229 4.61996 12.2726 4.66083 12.5588C4.66083 12.6406 4.70171 12.6815 4.70171 12.7632C4.70171 12.8859 4.70171 13.0494 4.41557 13.0903C4.00679 13.213 3.47538 13.3356 2.94397 13.6218C2.20817 14.0307 1.71764 14.3987 1.4315 14.7666C-0.0809772 16.7291 0.000778159 18.4055 0.000778159 18.4872C0.000778159 18.6099 0.0416558 18.6917 0.123411 18.7325L1.22711 19.8773C1.30886 19.9591 1.39062 20 1.47237 20C1.47237 20 1.51325 20 1.59501 20C2.00378 20 3.47538 19.9182 5.19224 18.569C5.56014 18.2828 5.92804 17.7922 6.33682 17.0562C6.62296 16.5656 6.78647 16.0341 6.86823 15.5844C6.94998 15.2982 7.07262 15.2982 7.19525 15.2982C7.23613 15.2982 7.31788 15.339 7.39964 15.339C7.56315 15.3799 7.72666 15.4208 7.93105 15.4208C8.13544 15.4208 8.33983 15.3799 8.54421 15.2573C8.78948 15.0937 8.95299 14.8893 8.99387 14.644C9.03475 14.3169 8.87123 13.9898 8.50334 13.7036L8.25807 13.4583Z"
+                                fill="white" />
+                            <path
+                                d="M16.884 4.87841L18.0188 4.32603C18.0609 4.28354 18.1449 4.24105 18.1869 4.19856L19.9101 1.86157C20.0362 1.69161 20.0362 1.43667 19.8681 1.3092L18.6913 0.119458C18.5652 -0.00801422 18.313 -0.0505049 18.1449 0.076967L15.8333 1.81908C15.7913 1.86157 15.7493 1.90406 15.7072 1.98905L15.1609 3.13629L11 7.21539L12.7652 9L16.884 4.87841Z"
+                                fill="white" />
+                            <path
+                                d="M17.8527 13.0448C16.8636 12.0036 15.4393 11.6288 14.0941 12.0036L7.64527 5.17331C7.72439 4.79848 7.76396 4.46529 7.76396 4.09046C7.76396 3.04926 7.36832 2.00806 6.61661 1.21675C5.58796 0.0922529 4.04498 -0.282579 2.6207 0.217197C2.54157 0.258845 2.42288 0.383789 2.38331 0.550381C2.38331 0.675325 2.42288 0.800269 2.50201 0.925213L4.44062 2.96597C4.87582 3.42409 4.87582 4.21541 4.44062 4.67353C4.00542 5.13166 3.25371 5.13166 2.81851 4.67353L0.8799 2.63278C0.76121 2.54949 0.642519 2.50784 0.484265 2.54949C0.365574 2.54949 0.246884 2.67443 0.20732 2.79937C-0.267442 4.25705 0.0886295 5.88133 1.11728 6.96417C1.82943 7.75549 2.85808 8.17197 3.88673 8.17197C4.20324 8.17197 4.55931 8.13032 4.87582 8.04702L11.3642 14.8773C11.0082 16.2933 11.4038 17.7927 12.3533 18.8339C13.105 19.6252 14.0546 20 15.0832 20C15.5184 20 15.914 19.9167 16.3492 19.7918C16.4679 19.7501 16.5866 19.6252 16.6262 19.5002C16.6658 19.3753 16.6262 19.2087 16.5075 19.1254L14.5689 17.0846C14.3711 16.8764 14.2128 16.5432 14.2128 16.21C14.2128 15.8768 14.3315 15.5853 14.5689 15.3354C14.8063 15.0855 15.0832 14.9606 15.3997 14.9606C15.7162 14.9606 15.9932 15.0855 16.2306 15.3354L18.1692 17.3762C18.2879 17.4595 18.4065 17.5011 18.5252 17.5011C18.6439 17.4595 18.7626 17.3762 18.8022 17.2512C18.9209 16.8348 19 16.3766 19 15.9185C19 14.8356 18.6044 13.7944 17.8527 13.0448Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <span class="list-services__desc" id="application-link">Оставить заявку</span>
+                    <a class="control control-circle control-circle--fill" href="#" aria-describedby="application-link"
+                        aria-label="значек заявки">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447716 16 1V18.5C15.1716 18.5 14.5001 19.1715 14.5 19.9999H13.5C13.4999 19.1715 12.8284 18.5 12 18.5C11.1716 18.5 10.5001 19.1715 10.5 19.9999H9.5C9.49994 19.1715 8.82839 18.5 8 18.5C7.17161 18.5 6.50006 19.1715 6.5 19.9999H5.5C5.49994 19.1715 4.82839 18.5 4 18.5C3.17161 18.5 2.50006 19.1715 2.5 19.9999H1.5C1.49994 19.1715 0.828392 18.5 0 18.5V1ZM9.41635 11.7884C8.55361 12.3444 7.47039 12.5936 6.32965 12.3827C4.52748 12.0472 3.08957 10.5327 2.85951 8.71142C2.49524 5.82612 4.94926 3.42012 7.85383 3.88023C9.656 4.1678 11.1035 5.644 11.4007 7.43652C11.5828 8.54846 11.324 9.57413 10.7872 10.4273L12.8961 12.5265C13.2699 12.9004 13.2699 13.5138 12.8961 13.8877C12.5126 14.2711 11.8991 14.2711 11.5253 13.8973L9.41635 11.7884ZM4.70588 8.05882C4.70588 6.76 5.76 5.70588 7.05882 5.70588C8.35765 5.70588 9.41177 6.76 9.41177 8.05882C9.41177 9.35765 8.35765 10.4118 7.05882 10.4118C5.76 10.4118 4.70588 9.35765 4.70588 8.05882Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <!-- header end -->
+
     <main>
         <section class="hero">
-            <h1 class="hero__title main-title">Услуги и сервисы</h1>
-                <nav class="hero__menu menu-nav">
-                    <ul class="list menu-nav__list">
-                        <li><button class="btn nav-btn active" type="button" data-key="1">Ремонтируемые устройства</button></li>
-                        <li><button class="btn nav-btn" type="button" data-key="2">Ремонтируемые бренды</button></li>
-                        <li><button class="btn nav-btn" type="button" data-key="3">Цены на услуги</button></li>
-                        <li><button class="btn nav-btn" type="button" data-key="4">Адреса сервисных центров</button></li>
-                        <li><button class="btn nav-btn" type="button" data-key="5">Специальные цены</button></li>
-                        <li><button class="btn nav-btn" type="button" data-key="6">Отзывы</button></li>
-                    </ul>
-                </nav>
-            <article class="article" data-value="1">
+            <h1 class="title-sideline hero__title">Услуги и сервисы</h1>
+            <nav>
+                <ul class="list list-navigation hero__navigation">
+                    <li><button class="control control-aqua list-navigation__control active" type="button" data-index="1">Ремонтируемые устройства</button>
+                    </li>
+                    <li><button class="control control-aqua list-navigation__control" type="button" data-index="2">Ремонтируемые бренды</button></li>
+                    <li><button class="control control-aqua list-navigation__control" type="button" data-index="3">Цены на услуги</button></li>
+                    <li><button class="control control-aqua list-navigation__control" type="button" data-index="4">Адреса сервисных центров</button></li>
+                    <li><button class="control control-aqua list-navigation__control" type="button" data-index="5">Специальные цены</button></li>
+                    <li><button class="control control-aqua list-navigation__control" type="button" data-index="6">Отзывы</button></li>
+                </ul>
+            </nav>
+            <article class="article active" data-index="1">
                 <div class="article__start">
                     <div class="article__content">
                         <p class="article__text">
@@ -159,44 +150,49 @@
                             отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                         </p>
                         <p class="article__text">
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
-                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое количество постоянных клиентов.
+                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+                            родным и близким.
                         </p>
                     </div>
-                    <a href="#" class="article__link read-more">Читать далее<span class="hidden-visible">о нашей копании</span></a>
-                    
+                    <a href="#" class="control control-arrow">Читать далее<span class="hidden-visible">о нашей
+                            копании</span></a>
+
                 </div>
                 <div class="article__end">
                     <picture class="article__image">
-                        <source media="(min-width: 1120px)" srcset="blocks/article/__pictures/picture_1120.jpg">
-                        <source media="(min-width: 768px)"  srcset="blocks/article/__pictures/picture_768.jpg">
-                        <img class="article__image" alt="логотип нашей компнии" src="blocks/article/__pictures/picture_320.jpg" alt="Flowers">
+                        <source media="(min-width: 1120px)" srcset="blocks/blocks/article/__pictures/picture_1120.jpg">
+                        <source media="(min-width: 768px)" srcset="blocks/blocks/article/__pictures/picture_768.jpg">
+                        <img class="article__image" alt="логотип нашей компнии"
+                            src="blocks/blocks/article/__pictures/picture_320.jpg" alt="Flowers">
                     </picture>
                 </div>
             </article>
 
-            <article class="article hidden" data-value="none">
+            <article class="article" data-index="none">
                 <div class="article__start">
                     <div class="article__content">
                         <p class="article__text">
                             No text content.
                         </p>
                     </div>
-                    <a href="#" class="article__link read-more">Читать далее<span class="hidden-visible"></span></a>
+                    <a href="#" class="control control-arrow">Читать далее<span class="hidden-visible"></span></a>
                 </div>
                 <div class="article__end">
                     <picture class="article__image">
-                        <source media="(min-width: 1120px)" srcset="blocks/article/__pictures/no_picture_1120.jpg">
-                        <source media="(min-width: 768px)"  srcset="blocks/article/__pictures/no_picture_768.jpg">
-                        <img class="article__image" alt="" src="blocks/article/__pictures/no_picture_320.jpg" alt="Flowers">
+                        <source media="(min-width: 1120px)" srcset="blocks/blocks/article/__pictures/no_picture_1120.jpg">
+                        <source media="(min-width: 768px)" srcset="blocks/blocks/article/__pictures/no_picture_768.jpg">
+                        <img class="article__image" alt="" src="blocks/blocks/article/__pictures/no_picture_320.jpg"
+                            alt="Flowers">
                     </picture>
                 </div>
-            </article>
+            </article> 
 
         </section>
     </main>
     <footer></footer>
-    <script src="blocks/nav-btn/nav-btn.js"></script>
+    <script src="blocks/blocks/list/list-navigation/list-navigation.js"></script>
 </body>
 
 </html>

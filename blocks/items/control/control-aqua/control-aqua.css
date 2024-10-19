@@ -1,0 +1,50 @@
+.control-aqua {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    padding: 8px 17px;
+    border-radius: 6px;
+
+    font-weight: 500;
+    font-size: 15.6px;
+    line-height: 24px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: var(--text-navigation);
+
+    outline: 2px solid transparent;
+    outline-offset: -6px;
+
+    transition: var(--duration-fast) ease-in-out color,
+                var(--duration-fast), var(--duration-fast) ease-in-out background-color,
+                var(--duration-fast) ease-in-out outline-color,
+                var(--duration-fast) ease-in-out outline-offset;
+}
+
+.control-aqua:hover {
+    color: var(--aquamarine);
+}
+
+.control-aqua:focus {
+    background-color: var(--back-secondary);
+}
+
+.control-aqua.active,
+.control-aqua:focus-visible {
+    outline-color: var(--aquamarine-lighter);
+    outline-offset: -2px;
+    color: var(--text-navigation);
+}
+
+@media (min-width: 768px) {
+    .control-aqua {
+        padding-right: 19px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .control-aqua {
+        padding: 8px 28px 8px 22px;
+    }
+}

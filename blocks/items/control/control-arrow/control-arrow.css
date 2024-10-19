@@ -1,0 +1,49 @@
+.control-arrow {
+    width: min-content;
+    padding-inline: 32px 10px;
+
+    text-wrap: nowrap;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-primary);
+
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -4px;
+    
+    background: url('control-arrow.svg') no-repeat;
+    background-repeat: space repeat-y;
+    background-position: 7.5px 6px;
+    
+    transition: .1s ease-in-out outline-offset,
+                .1s ease-in-out outline-color, 
+                .1s ease-in-out color,
+                .05s ease-in-out background-position;
+}
+
+.control-arrow:hover {
+    color: var(--aquamarine);
+}
+
+.control-arrow:active {
+    background-position-y: 4px;
+}
+.control-arrow:focus-visible {
+    outline-color: var(--aquamarine-lighter);
+    outline-offset: 0;
+    color: #1b1c21;
+}
+
+@media (min-width: 768px) {
+    .control-arrow {
+        background-position: 9px 6px;
+        padding-left: 33px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .control-arrow {
+        background-position: 7px 7px;
+        padding-left: 31px;
+    }
+}

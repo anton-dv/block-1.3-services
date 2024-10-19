@@ -1,0 +1,14 @@
+.logo path {
+    stroke: var(--infra-red-lighter);
+    stroke-width: 0;
+    transition: var(--duration-medium);
+}
+
+.logo:focus-visible {
+    outline: none;
+}
+
+.header__logo:focus-visible path {
+    stroke-width: 2px;
+}
+ 

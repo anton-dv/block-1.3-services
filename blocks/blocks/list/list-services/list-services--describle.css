@@ -1,0 +1,23 @@
+.list-services--describle li {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1120px) {
+    .list-services--describle {
+        gap: 27px;
+    }
+
+    .list-services--describle li {
+        gap: 10px;
+    }
+}
+
+/* 
+<ul class="list-services list-services--describle">
+    <li>
+        <span class="list-services__desc">...</span>
+        <a href="#" >...</a>
+    </li>    
+</ul>
+*/

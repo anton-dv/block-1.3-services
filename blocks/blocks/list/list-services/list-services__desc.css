@@ -1,0 +1,14 @@
+.list-services__desc {
+    font-size: 0;
+}
+
+@media (min-width: 1120px) {
+    .list-services--describle .list-services__desc {
+        padding-bottom: 3px;
+        
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+}

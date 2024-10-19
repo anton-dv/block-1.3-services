@@ -1,0 +1,17 @@
+.hero__navigation {
+    position: absolute;
+    max-width: 100%;
+    top: 88px;
+}
+
+@media (min-width: 768px) {
+    .hero__navigation {
+       top: 96px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .hero__navigation {
+       top: 91px;
+    }
+}

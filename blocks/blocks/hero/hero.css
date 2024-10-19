@@ -1,0 +1,10 @@
+.hero {
+    position: relative;
+    padding-top: 24px;
+}
+
+@media (min-width: 1120px) {
+    .hero {
+        padding-top: 42px;
+    }
+}

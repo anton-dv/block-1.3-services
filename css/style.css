@@ -1,6 +1,20 @@
 @import url('fonts.css');
+@import url('global.css');
 
-@import url('../blocks/nav-btn/nav-btn.css');
+@import url('../blocks/blocks/list/_.css');
+@import url('../blocks/blocks/sidebar/sidebar.css');
+@import url('../blocks/items/control/_.css');
+
+@import url('../blocks/items/title/_.css');
+@import url('../blocks/items/line/_.css');
+
+@import url('../blocks/blocks/header/_.css');
+@import url('../blocks/blocks/hero/_.css');
+@import url('../blocks/blocks/article/_.css');
+@import url('../blocks/items/logo/_.css');
+
+
+/* @import url('../blocks/nav-btn/nav-btn.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/services-nav/services-nav.css');
 @import url('../blocks/hero/hero.css');
@@ -9,4 +23,5 @@
 @import url('../blocks/article/article.css');
 @import url('../blocks/logo/logo.css');
 @import url('../blocks/read-more-link/read-more-link.css');
-@import url('../blocks/circular-link/circular-link.css');
+@import url('../blocks/circular-link/circular-link.css'); */
+

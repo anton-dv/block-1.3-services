@@ -1,0 +1,19 @@
+.header__start .header__line {
+    display: none;
+}
+
+.header__end .header__line {
+    transform: translateY(4px);
+}
+
+@media (min-width: 768px) {
+    .header__start .header__line {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__line {
+        display: none;
+    }
+}

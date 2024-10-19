@@ -1,0 +1,15 @@
+.article {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article.active {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row;
+    }
+}

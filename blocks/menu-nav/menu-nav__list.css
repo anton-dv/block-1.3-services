@@ -1,7 +1,0 @@
-@media (min-width: 1120px) {
-    .menu-nav__list {
-        display: flex;
-        row-gap: 6px;
-        flex-wrap: wrap;
-    }
-}

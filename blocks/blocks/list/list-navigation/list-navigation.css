@@ -1,0 +1,29 @@
+.list-navigation {
+    display: flex;
+    overflow-x: auto;
+    padding-inline: 16px 20px;
+}
+
+.list-navigation::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (min-width: 768px) {
+    .list-navigation {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .list-navigation {
+        padding-left: 33px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .list-navigation {
+        display: flex;
+        row-gap: 6px;
+        flex-wrap: wrap;
+    }
+}

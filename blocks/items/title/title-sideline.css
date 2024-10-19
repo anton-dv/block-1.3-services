@@ -1,0 +1,35 @@
+.title-sideline {
+    position: relative;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 1.68em;
+    line-height: 40px;
+}
+
+.title-sideline::before {
+    content: '';
+    position: absolute;
+    top: 1.4px;
+    left: 0;
+    height: 40px;
+    width: 4px;
+    
+    border-radius: 0 10px 10px 0;
+    background-color: var(--aquamarine);
+}
+
+@media (min-width: 768px) {
+    .title-sideline {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .title-sideline {
+        padding-left: 33px;
+    }
+
+    .title-sideline::before {   
+        width: 3px;
+    }
+}

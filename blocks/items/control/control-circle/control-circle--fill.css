@@ -1,0 +1,18 @@
+.control-circle--fill path {
+    fill: var(--control-circle-color-secondary);
+}
+
+.control-circle--fill::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+
+    background-image: radial-gradient( var(--control-circle-color-light) 25%, var(--control-circle-color-primary) 100%);
+    transition: var(--duration-fast) ease-in-out opacity;
+}
+
+.control-circle--fill:focus-visible::before,
+.control-circle--fill:hover::before {
+    opacity: 1;
+}
